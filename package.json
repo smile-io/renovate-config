@@ -6,7 +6,7 @@
   "author": "Smile.io <devs@smile.io>",
   "license": "MIT",
   "renovate-config": {
-    "base": {
+    "default": {
       "description": "Base configuration rules",
       "extends": [
         "config:base",
