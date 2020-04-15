@@ -1,6 +1,6 @@
 {
   "name": "@smile-io/renovate-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Renovate configuration presets for Smile repos.",
   "repository": "https://github.com/smile-io/renovate-config.git",
   "author": "Smile.io <devs@smile.io>",
@@ -13,11 +13,20 @@
       "description": "Base configuration rules",
       "extends": [
         "config:base",
-        "@smile-io:groupLinters",
-        "@smile-io:groupFormatters",
+        "monorepo:ember-decorators",
+        "@smile-io:groupEmber",
+        "@smile-io:groupEmberData",
         "@smile-io:groupChangesets",
+        "@smile-io:groupConcurrency",
+        "@smile-io:groupFormatters",
+        "@smile-io:groupLinters",
+        "@smile-io:groupStyling",
         "schedule:nonOfficeHours"
-      ]
+      ],
+      "reviewers": [
+        "team:smile-io/ember-reviewers"
+      ],
+      "reviewersSampleSize": 1
     },
     "groupLinters": {
       "description": "Group all linting tools",
@@ -57,6 +66,86 @@
           "groupSlug": "changesets",
           "packagePatterns": [
             "^ember-changeset"
+          ]
+        }
+      ]
+    },
+    "groupConcurrency": {
+      "description": "Group all ember-concurrency dependencies",
+      "packageRules": [
+        {
+          "groupName": "Concurrency dependencies",
+          "groupSlug": "concurrency",
+          "packageNames": [
+            "ember-concurrency",
+            "ember-concurrency-decorators"
+          ]
+        }
+      ]
+    },
+    "groupStyling": {
+      "description": "Group all styling dependencies",
+      "packageRules": [
+        {
+          "groupName": "Styling dependencies",
+          "groupSlug": "styling",
+          "packageNames": [
+            "ember-cli-autoprefixer",
+            "ember-cli-sass",
+            "ember-component-css",
+            "node-sass"
+          ]
+        }
+      ]
+    },
+    "groupEmberData": {
+      "description": "Group all Ember Data dependencies",
+      "packageRules": [
+        {
+          "groupName": "Ember Data dependencies",
+          "groupSlug": "ember-data",
+          "packageNames": [
+            "active-model-adapter",
+            "ember-api-actions",
+            "ember-data"
+          ]
+        }
+      ]
+    },
+    "groupEmber": {
+      "description": "Group all Ember dependencies",
+      "packageRules": [
+        {
+          "groupName": "Ember dependencies",
+          "groupSlug": "ember-deps",
+          "packageNames": [
+            "@ember/optional-features",
+            "@glimmer/component",
+            "@glimmer/tracking",
+            "broccoli-asset-rev",
+            "ember-auto-import",
+            "ember-cli",
+            "ember-cli-app-version",
+            "ember-cli-babel",
+            "ember-cli-dependency-checker",
+            "ember-cli-htmlbars",
+            "ember-cli-htmlbars-inline-precompile",
+            "ember-cli-inject-live-reload",
+            "ember-cli-release",
+            "ember-cli-sri",
+            "ember-cli-uglify",
+            "ember-disable-prototype-extensions",
+            "ember-export-application-global",
+            "ember-load-initializers",
+            "ember-maybe-import-regenerator",
+            "ember-qunit",
+            "ember-resolver",
+            "ember-source",
+            "ember-source-channel-url",
+            "ember-try",
+            "loader.js",
+            "npm-run-all",
+            "qunit-dom"
           ]
         }
       ]
