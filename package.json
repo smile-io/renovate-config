@@ -5,6 +5,9 @@
   "repository": "https://github.com/smile-io/renovate-config.git",
   "author": "Smile.io <devs@smile.io>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "renovate-config": {
     "default": {
       "description": "Base configuration rules",
