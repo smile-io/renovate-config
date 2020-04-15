@@ -4,5 +4,14 @@
   "description": "Renovate configuration presets for Smile repos.",
   "repository": "https://github.com/smile-io/renovate-config.git",
   "author": "Smile.io <devs@smile.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "renovate-config": {
+    "base": {
+      "description": "Base configuration rules",
+      "extends": [
+        "config:base",
+        "schedule:nonOfficeHours"
+      ]
+    }
+  }
 }
