@@ -21,7 +21,7 @@
         "@smile-io:groupFormatters",
         "@smile-io:groupLinters",
         "@smile-io:groupStyling",
-        "schedule:nonOfficeHours"
+        "schedule:weekly"
       ],
       "reviewers": [
         "team:smile-io/ember-reviewers"
