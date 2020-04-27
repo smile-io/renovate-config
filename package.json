@@ -26,7 +26,11 @@
       "reviewers": [
         "team:smile-io/ember-reviewers"
       ],
-      "reviewersSampleSize": 1
+      "reviewersSampleSize": 1,
+      "masterIssue": true,
+      "masterIssueAutoclose": true,
+      "stabilityDays": 5,
+      "prCreation": "not-pending"
     },
     "groupLinters": {
       "description": "Group all linting tools",
