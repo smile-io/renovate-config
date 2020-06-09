@@ -24,13 +24,17 @@
         "schedule:weekly"
       ],
       "reviewers": [
-        "team:smile-io/ember-reviewers"
+        "team:ember-reviewers"
       ],
       "reviewersSampleSize": 1,
       "masterIssue": true,
       "masterIssueAutoclose": true,
       "stabilityDays": 5,
       "prCreation": "not-pending"
+    },
+    "addon": {
+      "description": "Ember addon configuration rules",
+      "extends": ["@smile-io",":pinOnlyDevDependencies"]
     },
     "groupLinters": {
       "description": "Group all linting tools",
