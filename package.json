@@ -34,7 +34,10 @@
     },
     "addon": {
       "description": "Ember addon configuration rules",
-      "extends": ["@smile-io",":pinOnlyDevDependencies"]
+      "extends": [
+        "@smile-io",
+        ":pinOnlyDevDependencies"
+      ]
     },
     "groupLinters": {
       "description": "Group all linting tools",
