@@ -21,7 +21,8 @@
         "@smile-io:groupFormatters",
         "@smile-io:groupLinters",
         "@smile-io:groupStyling",
-        "schedule:weekly"
+        "schedule:weekly",
+        ":label(internal)"
       ],
       "reviewers": [
         "team:ember-reviewers"
