@@ -27,7 +27,19 @@
       "masterIssue": true,
       "masterIssueAutoclose": true,
       "stabilityDays": 5,
-      "prCreation": "not-pending"
+      "prCreation": "not-pending",
+      "packageRules": [
+        {
+          "packageNames": [
+            "node"
+          ],
+          "updateTypes": [
+            "minor",
+            "patch"
+          ],
+          "automerge": true
+        }
+      ]
     },
     "addon": {
       "description": "Ember addon configuration rules",
