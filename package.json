@@ -24,10 +24,6 @@
         "schedule:weekly",
         ":label(internal)"
       ],
-      "reviewers": [
-        "team:ember-reviewers"
-      ],
-      "reviewersSampleSize": 1,
       "masterIssue": true,
       "masterIssueAutoclose": true,
       "stabilityDays": 5,
