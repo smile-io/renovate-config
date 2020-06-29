@@ -29,6 +29,10 @@
       "masterIssueAutoclose": true,
       "stabilityDays": 5,
       "prCreation": "not-pending",
+      "reviewers": [
+        "team:ember-reviewers"
+      ],
+      "reviewersSampleSize": 1,
       "packageRules": [
         {
           "packageNames": [
