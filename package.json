@@ -21,6 +21,7 @@
         "@smile-io:groupFormatters",
         "@smile-io:groupLinters",
         "@smile-io:groupStyling",
+        "@smile-io:groupBuildTools",
         "schedule:weekly",
         ":label(internal)"
       ],
@@ -52,7 +53,7 @@
       "description": "Group all linting tools",
       "packageRules": [
         {
-          "groupName": "Linting tools",
+          "groupName": "linting tools",
           "groupSlug": "linting",
           "extends": [
             "packages:eslint"
@@ -63,11 +64,24 @@
         }
       ]
     },
+    "groupBuildTools": {
+      "description": "Group all build-time tools",
+      "packageRules": [
+        {
+          "groupName": "build tools",
+          "packageNames": [
+            "chalk",
+            "broccoli-funnel",
+            "fs-extra"
+          ]
+        }
+      ]
+    },
     "groupFormatters": {
       "description": "Group all formatting tools",
       "packageRules": [
         {
-          "groupName": "Code formatting",
+          "groupName": "code formatting",
           "groupSlug": "formatting",
           "packageNames": [
             "husky",
@@ -82,7 +96,7 @@
       "description": "Group all changeset dependencies",
       "packageRules": [
         {
-          "groupName": "Changeset support",
+          "groupName": "changeset support",
           "groupSlug": "changesets",
           "packagePatterns": [
             "^ember-changeset"
@@ -94,7 +108,7 @@
       "description": "Group all ember-concurrency dependencies",
       "packageRules": [
         {
-          "groupName": "Concurrency dependencies",
+          "groupName": "concurrency dependencies",
           "groupSlug": "concurrency",
           "packageNames": [
             "ember-concurrency",
@@ -107,7 +121,7 @@
       "description": "Group all styling dependencies",
       "packageRules": [
         {
-          "groupName": "Styling dependencies",
+          "groupName": "styling dependencies",
           "groupSlug": "styling",
           "packageNames": [
             "ember-cli-autoprefixer",
