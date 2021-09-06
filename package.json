@@ -29,7 +29,7 @@
       "masterIssueAutoclose": true,
       "stabilityDays": 5,
       "prCreation": "not-pending",
-      "prConcurrentLimit": 5,
+      "prConcurrentLimit": 10,
       "rebaseWhen": "behind-base-branch",
       "reviewers": [
         "team:ember-reviewers"
