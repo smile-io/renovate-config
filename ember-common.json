@@ -6,7 +6,7 @@
     ":timezone(America/Toronto)",
 
     "group:glimmer",
-    "@smile-io/renovate-config:prettier",
+    "github>smile-io/renovate-config:prettier",
 
     "packages:emberTemplateLint"
   ],
