@@ -1,0 +1,4 @@
+{
+  "description": "Ember addon configuration rules",
+  "extends": ["config:js-lib", "@smile-io/renovate-config:ember-common"]
+}

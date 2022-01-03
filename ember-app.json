@@ -1,0 +1,7 @@
+{
+  "description": "Ember app configuration rules",
+  "extends": [
+    "config:js-app",
+    "@smile-io/renovate-config#update-renovate-config:ember-common"
+  ]
+}
