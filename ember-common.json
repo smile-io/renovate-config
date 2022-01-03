@@ -1,0 +1,30 @@
+{
+  "description": "Common Ember configuration rules",
+  "extends": [
+    ":disableRateLimiting",
+    ":prNotPending",
+    ":timezone(America/Toronto)",
+
+    "group:glimmer",
+    "group:monorepos",
+    "@smile-io/renovate-config:groupFormatters",
+
+    "packages:emberTemplateLint"
+  ],
+
+  "groupFormatters": {
+    "description": "Group all formatting tools",
+    "packageRules": [
+      {
+        "groupName": "code formatting",
+        "groupSlug": "formatting",
+        "matchPackageNames": [
+          "husky",
+          "precise-commits",
+          "prettier",
+          "prettier-plugin-packagejson"
+        ]
+      }
+    ]
+  }
+}
