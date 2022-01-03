@@ -6,13 +6,12 @@
     ":timezone(America/Toronto)",
 
     "group:glimmer",
-    "group:monorepos",
-    "@smile-io/renovate-config:groupFormatters",
+    "@smile-io/renovate-config:prettier",
 
     "packages:emberTemplateLint"
   ],
 
-  "groupFormatters": {
+  "prettier": {
     "description": "Group all formatting tools",
     "packageRules": [
       {
@@ -23,6 +22,114 @@
           "precise-commits",
           "prettier",
           "prettier-plugin-packagejson"
+        ]
+      }
+    ]
+  },
+  "linting": {
+    "description": "Group all linting tools",
+    "packageRules": [
+      {
+        "groupName": "linting tools",
+        "groupSlug": "linting",
+        "extends": ["packages:eslint"],
+        "matchPackageNames": ["ember-template-lint"]
+      }
+    ]
+  },
+  "build-tools": {
+    "description": "Group all build-time tools",
+    "packageRules": [
+      {
+        "groupName": "build tools",
+        "matchPackageNames": ["chalk", "broccoli-funnel", "fs-extra"]
+      }
+    ]
+  },
+  "changeset": {
+    "description": "Group all changeset dependencies",
+    "packageRules": [
+      {
+        "groupName": "changeset support",
+        "groupSlug": "changesets",
+        "matchPackagePatterns": ["^ember-changeset"]
+      }
+    ]
+  },
+  "concurrency": {
+    "description": "Group all ember-concurrency dependencies",
+    "packageRules": [
+      {
+        "groupName": "concurrency dependencies",
+        "groupSlug": "concurrency",
+        "matchPackageNames": [
+          "ember-concurrency",
+          "ember-concurrency-decorators"
+        ]
+      }
+    ]
+  },
+  "styling": {
+    "description": "Group all styling dependencies",
+    "packageRules": [
+      {
+        "groupName": "styling dependencies",
+        "groupSlug": "styling",
+        "matchPackageNames": [
+          "ember-cli-autoprefixer",
+          "ember-cli-sass",
+          "ember-component-css",
+          "node-sass"
+        ]
+      }
+    ]
+  },
+  "ember-data": {
+    "description": "Group all Ember Data dependencies",
+    "packageRules": [
+      {
+        "groupName": "Ember Data dependencies",
+        "groupSlug": "ember-data",
+        "matchPackageNames": [
+          "active-model-adapter",
+          "ember-api-actions",
+          "ember-data"
+        ]
+      }
+    ]
+  },
+  "ember-infra": {
+    "description": "Group all Ember dependencies",
+    "packageRules": [
+      {
+        "groupName": "Ember dependencies",
+        "groupSlug": "ember-deps",
+        "matchPackageNames": [
+          "@ember/optional-features",
+          "broccoli-asset-rev",
+          "ember-auto-import",
+          "ember-cli",
+          "ember-cli-app-version",
+          "ember-cli-babel",
+          "ember-cli-dependency-checker",
+          "ember-cli-htmlbars",
+          "ember-cli-htmlbars-inline-precompile",
+          "ember-cli-inject-live-reload",
+          "ember-cli-release",
+          "ember-cli-sri",
+          "ember-cli-uglify",
+          "ember-disable-prototype-extensions",
+          "ember-export-application-global",
+          "ember-load-initializers",
+          "ember-maybe-import-regenerator",
+          "ember-qunit",
+          "ember-resolver",
+          "ember-source",
+          "ember-source-channel-url",
+          "ember-try",
+          "loader.js",
+          "npm-run-all",
+          "qunit-dom"
         ]
       }
     ]
