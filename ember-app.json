@@ -1,7 +1,4 @@
 {
   "description": "Ember app configuration rules",
-  "extends": [
-    "config:js-app",
-    "@smile-io/renovate-config#update-renovate-config:ember-common"
-  ]
+  "extends": ["config:js-app", "github>smile-io/renovate-config:ember-common"]
 }
