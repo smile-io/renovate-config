@@ -8,6 +8,11 @@
       ":labels(internal,dependencies)",
       ":enableVulnerabilityAlertsWithLabel(security,internal,dependencies)",
 
+      ":automergePatch",
+      ":automergeBranch",
+      ":automergeLinters",
+      ":automergeRequireAllStatusChecks",
+
       "group:glimmer",
       "github>smile-io/renovate-config:ember/prettier",
       "github>smile-io/renovate-config:ember/linting",
@@ -58,7 +63,8 @@
           "precise-commits",
           "prettier",
           "prettier-plugin-packagejson"
-        ]
+        ],
+        "automerge": true
       }
     ]
   },
