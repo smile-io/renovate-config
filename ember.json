@@ -4,15 +4,12 @@
     "extends": [
       ":disableRateLimiting",
       ":prNotPending",
-      ":timezone(America/Toronto)",
       ":labels(internal,dependencies)",
       ":enableVulnerabilityAlertsWithLabel(security,internal,dependencies)",
-
       ":automergePatch",
       ":automergeBranch",
       ":automergeLinters",
       ":automergeRequireAllStatusChecks",
-
       "group:glimmer",
       "github>smile-io/renovate-config:ember/prettier",
       "github>smile-io/renovate-config:ember/linting",
@@ -24,14 +21,12 @@
       "github>smile-io/renovate-config:ember/ember-data",
       "github>smile-io/renovate-config:ember/ember-infra"
     ],
-
     "packageRules": [
       {
         "matchUpdateTypes": ["major", "minor"],
         "stabilityDays": 5,
         "schedule": "before 3am on Monday"
       },
-
       {
         "matchDepTypes": ["engines", "volta"],
         "matchPackageNames": ["node", "yarn"],
@@ -39,12 +34,10 @@
       }
     ]
   },
-
   "addon": {
     "description": "Ember addon configuration rules",
     "extends": ["config:js-lib", "github>smile-io/renovate-config:ember/common"]
   },
-
   "app": {
     "description": "Ember app configuration rules",
     "extends": [
@@ -53,7 +46,6 @@
     ],
     "baseBranches": ["dependency-updates"]
   },
-
   "prettier": {
     "description": "Group all formatting tools",
     "packageRules": [
