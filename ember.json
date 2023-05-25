@@ -22,10 +22,6 @@
       {
         "matchUpdateTypes": ["major", "minor"],
         "stabilityDays": 5
-      },
-      {
-        "matchDepTypes": ["engines", "volta"],
-        "matchPackageNames": ["node", "yarn"]
       }
     ]
   },
