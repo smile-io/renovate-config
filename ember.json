@@ -21,8 +21,7 @@
     "packageRules": [
       {
         "matchUpdateTypes": ["major", "minor"],
-        "stabilityDays": 5,
-        "schedule": "before 3am on Monday"
+        "stabilityDays": 5
       },
       {
         "matchDepTypes": ["engines", "volta"],
