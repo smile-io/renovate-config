@@ -25,8 +25,7 @@
       },
       {
         "matchDepTypes": ["engines", "volta"],
-        "matchPackageNames": ["node", "yarn"],
-        "automerge": true
+        "matchPackageNames": ["node", "yarn"]
       }
     ]
   },
@@ -53,8 +52,7 @@
           "precise-commits",
           "prettier",
           "prettier-plugin-packagejson"
-        ],
-        "automerge": true
+        ]
       }
     ]
   },
