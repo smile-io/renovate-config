@@ -6,7 +6,6 @@
       ":prNotPending",
       ":labels(internal,dependencies)",
       ":enableVulnerabilityAlertsWithLabel(security,internal,dependencies)",
-      ":automergeRequireAllStatusChecks",
       "group:glimmer",
       "github>smile-io/renovate-config:ember/prettier",
       "github>smile-io/renovate-config:ember/linting",
@@ -27,11 +26,19 @@
   },
   "addon": {
     "description": "Ember addon configuration rules",
-    "extends": ["config:js-lib", "github>smile-io/renovate-config:ember/common"]
+    "extends": [
+      "config:best-practices",
+      "config:js-lib",
+      "github>smile-io/renovate-config:ember/common"
+    ]
   },
   "app": {
     "description": "Ember app configuration rules",
-    "extends": ["config:js-app", "github>smile-io/renovate-config:ember/common"]
+    "extends": [
+      "config:best-practices",
+      "config:js-app",
+      "github>smile-io/renovate-config:ember/common"
+    ]
   },
   "prettier": {
     "description": "Group all formatting tools",
