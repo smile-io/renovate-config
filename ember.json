@@ -4,8 +4,8 @@
     "extends": [
       ":disableRateLimiting",
       ":prNotPending",
-      ":labels(internal,dependencies)",
-      ":enableVulnerabilityAlertsWithLabel(security,internal,dependencies)",
+      ":labels(internal,dependencies, 'Category: KTLO')",
+      ":enableVulnerabilityAlertsWithLabel(security,internal,dependencies,'Category: KTLO')",
       "group:glimmer",
       "github>smile-io/renovate-config:ember/prettier",
       "github>smile-io/renovate-config:ember/linting",
