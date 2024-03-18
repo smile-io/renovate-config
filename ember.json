@@ -124,7 +124,7 @@
       {
         "groupName": "datadog dependencies",
         "groupSlug": "datadog",
-        "matchPackageNames": ["@datadog/browser-rum", "@datadog/datadog-ci"]
+        "matchPackageNames": ["@datadog/browser-logs", "@datadog/browser-rum", "@datadog/datadog-ci"]
       }
     ]
   },
