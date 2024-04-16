@@ -21,6 +21,11 @@
       {
         "matchUpdateTypes": ["major", "minor"],
         "stabilityDays": 5
+      },
+      {
+        "matchPackageNames": ["eslint"],
+        "matchUpdateTypes": ["major"],
+        "enabled": false
       }
     ]
   },
