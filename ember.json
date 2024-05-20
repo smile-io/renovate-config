@@ -26,6 +26,18 @@
         "matchPackageNames": ["eslint"],
         "matchUpdateTypes": ["major"],
         "enabled": false
+      },
+      {
+        "automerge": true,
+        "matchCurrentVersion": ">= 1.0.0",
+        "matchUpdateTypes": [
+          "digest",
+          "minor",
+          "patch"
+        ],
+        "extends": [
+          "packages:linters"
+        ]
       }
     ]
   },
