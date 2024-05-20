@@ -53,6 +53,7 @@
         "groupSlug": "formatting",
         "matchPackageNames": [
           "husky",
+          "lint-staged",
           "precise-commits",
           "prettier",
           "prettier-plugin-packagejson"
