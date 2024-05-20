@@ -7,9 +7,8 @@
       ":labels(internal,dependencies, 'Category: KTLO')",
       ":enableVulnerabilityAlertsWithLabel(security,internal,dependencies,'Category: KTLO')",
       "group:glimmer",
-      "github>smile-io/renovate-config:ember/prettier",
-      "github>smile-io/renovate-config:ember/linting",
       "group:embroiderMonorepo",
+      "group:linters",
       "github>smile-io/renovate-config:ember/build-tools",
       "github>smile-io/renovate-config:ember/changeset",
       "github>smile-io/renovate-config:ember/concurrency",
@@ -44,33 +43,6 @@
       "config:best-practices",
       "config:js-app",
       "github>smile-io/renovate-config:ember/common"
-    ]
-  },
-  "prettier": {
-    "description": "Group all formatting tools",
-    "packageRules": [
-      {
-        "groupName": "code formatting",
-        "groupSlug": "formatting",
-        "matchPackageNames": [
-          "husky",
-          "lint-staged",
-          "precise-commits",
-          "prettier",
-          "prettier-plugin-packagejson"
-        ]
-      }
-    ]
-  },
-  "linting": {
-    "description": "Group all linting tools",
-    "packageRules": [
-      {
-        "groupName": "linting tools",
-        "groupSlug": "linting",
-        "extends": ["packages:eslint"],
-        "matchPackageNames": ["ember-template-lint"]
-      }
     ]
   },
   "build-tools": {
