@@ -23,7 +23,7 @@
         "stabilityDays": 5
       },
       {
-        "matchPackageNames": ["eslint"],
+        "matchDepNames": ["eslint"],
         "matchUpdateTypes": ["major"],
         "enabled": false
       },
@@ -57,7 +57,7 @@
     "packageRules": [
       {
         "groupName": "build tools",
-        "matchPackageNames": [
+        "matchDepNames": [
           "chalk",
           "broccoli-funnel",
           "broccoli-merge-trees",
@@ -82,7 +82,7 @@
       {
         "groupName": "concurrency dependencies",
         "groupSlug": "concurrency",
-        "matchPackageNames": [
+        "matchDepNames": [
           "ember-concurrency",
           "ember-concurrency-decorators"
         ]
@@ -95,7 +95,7 @@
       {
         "groupName": "styling dependencies",
         "groupSlug": "styling",
-        "matchPackageNames": [
+        "matchDepNames": [
           "ember-cli-autoprefixer",
           "ember-cli-sass",
           "ember-component-css",
@@ -110,7 +110,7 @@
       {
         "groupName": "datadog dependencies",
         "groupSlug": "datadog",
-        "matchPackageNames": [
+        "matchDepNames": [
           "@datadog/browser-logs",
           "@datadog/browser-rum",
           "@datadog/datadog-ci"
@@ -124,7 +124,7 @@
       {
         "groupName": "Ember Data dependencies",
         "groupSlug": "ember-data",
-        "matchPackageNames": [
+        "matchDepNames": [
           "active-model-adapter",
           "ember-api-actions",
           "ember-data"
@@ -139,7 +139,7 @@
       {
         "groupName": "Ember dependencies",
         "groupSlug": "ember-deps",
-        "matchPackageNames": [
+        "matchDepNames": [
           "@ember/jquery",
           "@ember/optional-features",
           "@ember/test-helpers",
