@@ -28,17 +28,12 @@
         "enabled": false
       },
       {
-        "automerge": true,
+        "extends": ["packages:linters"],
         "matchCurrentVersion": ">= 1.0.0",
-        "matchUpdateTypes": [
-          "digest",
-          "minor",
-          "patch"
-        ],
-        "extends": [
-          "packages:linters"
-        ]
-      }
+        "matchUpdateTypes": ["digest", "minor", "patch"],
+        "automerge": true
+      },
+      { "extends": ["helpers:pinGitHubActionDigests"], "automerge": true }
     ]
   },
   "addon": {
@@ -115,7 +110,11 @@
       {
         "groupName": "datadog dependencies",
         "groupSlug": "datadog",
-        "matchPackageNames": ["@datadog/browser-logs", "@datadog/browser-rum", "@datadog/datadog-ci"]
+        "matchPackageNames": [
+          "@datadog/browser-logs",
+          "@datadog/browser-rum",
+          "@datadog/datadog-ci"
+        ]
       }
     ]
   },
@@ -130,11 +129,7 @@
           "ember-api-actions",
           "ember-data"
         ],
-        "matchUpdateTypes": [
-          "digest",
-          "patch",
-          "minor"
-        ]
+        "matchUpdateTypes": ["digest", "patch", "minor"]
       }
     ]
   },
@@ -179,11 +174,7 @@
           "qunit",
           "qunit-dom"
         ],
-        "matchUpdateTypes": [
-          "digest",
-          "patch",
-          "minor"
-        ]
+        "matchUpdateTypes": ["digest", "patch", "minor"]
       }
     ]
   }
