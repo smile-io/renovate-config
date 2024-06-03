@@ -38,7 +38,7 @@
         "extends": [
           "monorepo:babel",
           "monorepo:datadog-browser-sdk",
-          "github>smile-io/renovate-config:ember/packages:styling"
+          "github>smile-io/renovate-config:ember/styling-packages"
         ],
         "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
@@ -106,7 +106,8 @@
     ]
   },
 
-  "packages:styling": {
+  "styling-packages": {
+    "description": "Styling packages",
     "matchDepNames": [
       "ember-cli-autoprefixer",
       "ember-cli-sass",
@@ -122,7 +123,7 @@
       {
         "groupName": "styling dependencies",
         "groupSlug": "styling",
-        "extends": ["github>smile-io/renovate-config:ember/packages:styling"]
+        "extends": ["github>smile-io/renovate-config:ember/styling-packages"]
       }
     ]
   },
