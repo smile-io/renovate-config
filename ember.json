@@ -9,6 +9,7 @@
       "group:glimmer",
       "group:embroiderMonorepo",
       "group:linters",
+      "packages:styling",
       "github>smile-io/renovate-config:ember/build-tools",
       "github>smile-io/renovate-config:ember/changeset",
       "github>smile-io/renovate-config:ember/concurrency",
