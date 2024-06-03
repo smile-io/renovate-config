@@ -34,9 +34,11 @@
         "automerge": true
       },
       { "extends": ["helpers:pinGitHubActionDigests"], "automerge": true },
-      {"extends": ["group:datadog", "group:styling"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "automerge":true}
+      {
+        "extends": ["github>smile-io/renovate-config:ember/datadog", "github>smile-io/renovate-config:ember/styling"],
+        "matchUpdateTypes": ["patch", "minor"],
+        "automerge": true
+      }
     ]
   },
   "addon": {
@@ -85,10 +87,7 @@
       {
         "groupName": "concurrency dependencies",
         "groupSlug": "concurrency",
-        "matchDepNames": [
-          "ember-concurrency",
-          "ember-concurrency-decorators"
-        ]
+        "matchDepNames": ["ember-concurrency", "ember-concurrency-decorators"]
       }
     ]
   },
