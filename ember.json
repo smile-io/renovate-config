@@ -37,9 +37,15 @@
       {
         "extends": [
           "monorepo:babel",
+          "monorepo:datadog-browser-sdk",
           "github>smile-io/renovate-config:ember/datadog",
           "github>smile-io/renovate-config:ember/styling"
         ],
+        "matchUpdateTypes": ["patch", "minor"],
+        "automerge": true
+      },
+      {
+        "matchDepNames": ["ace-builds"],
         "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
       }
@@ -115,11 +121,10 @@
     "description": "Group all Datadog dependencies",
     "packageRules": [
       {
+        "extends": ["group:datadog-browser-sdkMonorepo"],
         "groupName": "datadog dependencies",
         "groupSlug": "datadog",
         "matchDepNames": [
-          "@datadog/browser-logs",
-          "@datadog/browser-rum",
           "@datadog/datadog-ci"
         ]
       }
