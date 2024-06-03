@@ -121,13 +121,14 @@
       }
     ]
   },
+
   "styling": {
     "description": "Group all styling dependencies",
     "packageRules": [
       {
         "groupName": "styling dependencies",
         "groupSlug": "styling",
-        "extends": ["packages:styling"]
+        "extends": ["github>smile-io/renovate-config:ember/packages:styling"]
       }
     ]
   },
