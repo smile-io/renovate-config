@@ -35,11 +35,17 @@
       },
       { "extends": ["helpers:pinGitHubActionDigests"], "automerge": true },
       {
-        "extends": [
-          "monorepo:babel",
-          "monorepo:datadog-browser-sdk",
-          "github>smile-io/renovate-config:ember/styling-packages"
-        ],
+        "extends": ["monorepo:babel"],
+        "matchUpdateTypes": ["patch", "minor"],
+        "automerge": true
+      },
+      {
+        "extends": ["monorepo:datadog-browser-sdk"],
+        "matchUpdateTypes": ["patch", "minor"],
+        "automerge": true
+      },
+      {
+        "extends": ["github>smile-io/renovate-config:ember/styling-packages"],
         "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
       },
