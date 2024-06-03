@@ -33,7 +33,10 @@
         "matchUpdateTypes": ["digest", "minor", "patch"],
         "automerge": true
       },
-      { "extends": ["helpers:pinGitHubActionDigests"], "automerge": true }
+      { "extends": ["helpers:pinGitHubActionDigests"], "automerge": true },
+      {"extends": ["group:datadog", "group:styling"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge":true}
     ]
   },
   "addon": {
@@ -99,7 +102,8 @@
           "ember-cli-autoprefixer",
           "ember-cli-sass",
           "ember-component-css",
-          "node-sass"
+          "node-sass",
+          "sass"
         ]
       }
     ]
