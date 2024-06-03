@@ -9,7 +9,6 @@
       "group:glimmer",
       "group:embroiderMonorepo",
       "group:linters",
-      "packages:styling",
       "github>smile-io/renovate-config:ember/build-tools",
       "github>smile-io/renovate-config:ember/changeset",
       "github>smile-io/renovate-config:ember/concurrency",
@@ -108,17 +107,12 @@
   },
 
   "packages:styling": {
-    "description": "Styling packages",
-    "packageRules": [
-      {
-        "matchDepNames": [
-          "ember-cli-autoprefixer",
-          "ember-cli-sass",
-          "ember-component-css",
-          "node-sass",
-          "sass"
-        ]
-      }
+    "matchDepNames": [
+      "ember-cli-autoprefixer",
+      "ember-cli-sass",
+      "ember-component-css",
+      "node-sass",
+      "sass"
     ]
   },
 
