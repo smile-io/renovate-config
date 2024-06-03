@@ -38,8 +38,7 @@
         "extends": [
           "monorepo:babel",
           "monorepo:datadog-browser-sdk",
-          "github>smile-io/renovate-config:ember/datadog",
-          "github>smile-io/renovate-config:ember/styling"
+          "github>smile-io/renovate-config:ember/packages:styling"
         ],
         "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
@@ -51,6 +50,7 @@
       }
     ]
   },
+
   "addon": {
     "description": "Ember addon configuration rules",
     "extends": [
@@ -59,6 +59,7 @@
       "github>smile-io/renovate-config:ember/common"
     ]
   },
+
   "app": {
     "description": "Ember app configuration rules",
     "extends": [
@@ -67,6 +68,7 @@
       "github>smile-io/renovate-config:ember/common"
     ]
   },
+
   "build-tools": {
     "description": "Group all build-time tools",
     "packageRules": [
@@ -81,6 +83,7 @@
       }
     ]
   },
+
   "changeset": {
     "description": "Group all changeset dependencies",
     "packageRules": [
@@ -91,6 +94,7 @@
       }
     ]
   },
+
   "concurrency": {
     "description": "Group all ember-concurrency dependencies",
     "packageRules": [
@@ -101,12 +105,11 @@
       }
     ]
   },
-  "styling": {
-    "description": "Group all styling dependencies",
+
+  "packages:styling": {
+    "description": "Styling packages",
     "packageRules": [
       {
-        "groupName": "styling dependencies",
-        "groupSlug": "styling",
         "matchDepNames": [
           "ember-cli-autoprefixer",
           "ember-cli-sass",
@@ -117,6 +120,17 @@
       }
     ]
   },
+  "styling": {
+    "description": "Group all styling dependencies",
+    "packageRules": [
+      {
+        "groupName": "styling dependencies",
+        "groupSlug": "styling",
+        "extends": ["packages:styling"]
+      }
+    ]
+  },
+
   "datadog": {
     "description": "Group all Datadog dependencies",
     "packageRules": [
@@ -124,12 +138,11 @@
         "extends": ["group:datadog-browser-sdkMonorepo"],
         "groupName": "datadog dependencies",
         "groupSlug": "datadog",
-        "matchDepNames": [
-          "@datadog/datadog-ci"
-        ]
+        "matchDepNames": ["@datadog/datadog-ci"]
       }
     ]
   },
+
   "ember-data": {
     "description": "Group all Ember Data dependencies",
     "packageRules": [
@@ -145,6 +158,7 @@
       }
     ]
   },
+
   "ember-infra": {
     "description": "Group all Ember dependencies",
     "packageRules": [
