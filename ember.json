@@ -20,7 +20,7 @@
     "packageRules": [
       {
         "matchUpdateTypes": ["major", "minor"],
-        "stabilityDays": 5
+        "minimumReleaseAge": 5
       },
       {
         "matchDepNames": ["eslint"],
