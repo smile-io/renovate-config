@@ -6,16 +6,17 @@
       ":prNotPending",
       ":labels(internal,dependencies, 'Category: KTLO')",
       ":enableVulnerabilityAlertsWithLabel(security,internal,dependencies,'Category: KTLO')",
-      "group:glimmer",
       "group:embroiderMonorepo",
+      "group:glimmer",
+      "group:jsUnitTest",
       "group:linters",
       "github>smile-io/renovate-config:ember/build-tools",
       "github>smile-io/renovate-config:ember/changeset",
       "github>smile-io/renovate-config:ember/concurrency",
-      "github>smile-io/renovate-config:ember/styling",
       "github>smile-io/renovate-config:ember/datadog",
       "github>smile-io/renovate-config:ember/ember-data",
-      "github>smile-io/renovate-config:ember/ember-infra"
+      "github>smile-io/renovate-config:ember/ember-infra",
+      "github>smile-io/renovate-config:ember/styling"
     ],
     "packageRules": [
       {
@@ -46,6 +47,11 @@
       },
       {
         "matchDepNames": ["@datadog/datadog-ci"],
+        "matchUpdateTypes": ["patch", "minor"],
+        "automerge": true
+      },
+      {
+        "extends": ["packages:jsUnitTest"],
         "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
       },
