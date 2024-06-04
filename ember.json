@@ -6,6 +6,7 @@
       ":prNotPending",
       ":labels(internal,dependencies, 'Category: KTLO')",
       ":enableVulnerabilityAlertsWithLabel(security,internal,dependencies,'Category: KTLO')",
+      ":separateMultipleMajorReleases",
       "group:embroiderMonorepo",
       "group:glimmer",
       "group:jsUnitTest",
