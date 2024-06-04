@@ -47,11 +47,6 @@
         "automerge": true
       },
       {
-        "matchDepNames": ["@datadog/datadog-ci"],
-        "matchUpdateTypes": ["patch", "minor"],
-        "automerge": true
-      },
-      {
         "extends": ["github>smile-io/renovate-config:ember/testing-packages"],
         "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
@@ -62,7 +57,7 @@
         "automerge": true
       },
       {
-        "matchDepNames": ["ace-builds"],
+        "matchDepNames": ["@datadog/datadog-ci","@release-it-plugins/lerna-changelog","ace-builds","npm-run-all2"],
         "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
       }
