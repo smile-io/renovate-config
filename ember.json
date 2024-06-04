@@ -45,6 +45,11 @@
         "automerge": true
       },
       {
+        "matchDepNames": ["@datadog/datadog-ci"],
+        "matchUpdateTypes": ["patch", "minor"],
+        "automerge": true
+      },
+      {
         "extends": ["github>smile-io/renovate-config:ember/styling-packages"],
         "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
