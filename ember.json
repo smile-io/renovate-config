@@ -33,32 +33,51 @@
         "extends": ["packages:linters"],
         "matchCurrentVersion": ">= 1.0.0",
         "matchUpdateTypes": ["digest", "minor", "patch"],
+        "minimumReleaseAge": "5 days",
         "automerge": true
       },
       { "extends": ["helpers:pinGitHubActionDigests"], "automerge": true },
       {
         "extends": ["monorepo:babel"],
         "matchUpdateTypes": ["patch", "minor"],
+        "minimumReleaseAge": "5 days",
         "automerge": true
       },
       {
         "extends": ["monorepo:datadog-browser-sdk"],
         "matchUpdateTypes": ["patch", "minor"],
+        "minimumReleaseAge": "5 days",
         "automerge": true
       },
       {
         "extends": ["github>smile-io/renovate-config:ember/testing-packages"],
         "matchUpdateTypes": ["patch", "minor"],
+        "minimumReleaseAge": "5 days",
         "automerge": true
       },
       {
         "extends": ["github>smile-io/renovate-config:ember/styling-packages"],
         "matchUpdateTypes": ["patch", "minor"],
+        "minimumReleaseAge": "5 days",
         "automerge": true
       },
       {
-        "matchDepNames": ["@datadog/datadog-ci","@release-it-plugins/lerna-changelog","ace-builds","npm-run-all2"],
+        "matchDepNames": [
+          "@datadog/datadog-ci",
+          "@release-it-plugins/lerna-changelog",
+          "ace-builds",
+          "npm-run-all2"
+        ],
         "matchUpdateTypes": ["patch", "minor"],
+        "minimumReleaseAge": "5 days",
+        "automerge": true
+      },
+      {
+        "matchUpdateTypes": ["patch"],
+        "matchDepTypes": ["devDependencies","dependencies"],
+        "groupName": "weekly patch updates",
+        "schedule": ["every weekend"],
+        "minimumReleaseAge": "5 days",
         "automerge": true
       }
     ]
