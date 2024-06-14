@@ -74,7 +74,7 @@
       },
       {
         "matchUpdateTypes": ["patch"],
-        "matchDepTypes": ["devDependencies","dependencies"],
+        "matchDepTypes": ["devDependencies", "dependencies"],
         "groupName": "weekly patch updates",
         "schedule": ["every weekend"],
         "minimumReleaseAge": "5 days",
