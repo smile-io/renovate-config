@@ -73,6 +73,13 @@
         "automerge": true
       },
       {
+        "matchUpdateTypes": ["patch", "minor"],
+        "matchDepTypes": ["engines", "volta"],
+        "groupName": "weekly patch updates",
+        "minimumReleaseAge": "5 days",
+        "automerge": true
+      },
+      {
         "matchUpdateTypes": ["patch"],
         "matchDepTypes": ["devDependencies", "dependencies"],
         "groupName": "weekly patch updates",
