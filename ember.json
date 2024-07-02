@@ -82,7 +82,7 @@
       {
         "matchUpdateTypes": ["patch"],
         "matchDepTypes": ["devDependencies", "dependencies"],
-        "excludePackageNames": ["pnpm"],
+        "excludeDepNames": ["pnpm"],
         "groupName": "weekly patch updates",
         "schedule": ["every weekend"],
         "minimumReleaseAge": "5 days",
