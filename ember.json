@@ -87,6 +87,12 @@
         "schedule": ["every weekend"],
         "minimumReleaseAge": "5 days",
         "automerge": true
+      },
+      {
+        "matchDepNames": ["node"],
+        "matchUpdateTypes": ["digest","pinDigest"],
+        "minimumReleaseAge": "5 days",
+        "automerge": true
       }
     ]
   },
