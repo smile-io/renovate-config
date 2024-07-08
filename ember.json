@@ -75,7 +75,7 @@
       {
         "matchUpdateTypes": ["patch", "minor"],
         "matchDepTypes": ["engines", "volta"],
-        "groupName": "weekly patch updates",
+        "groupName": "weekly updates",
         "minimumReleaseAge": "5 days",
         "automerge": true
       },
@@ -89,14 +89,13 @@
         "automerge": true
       },
       {
-        "matchDepNames": ["node"],
-        "matchUpdateTypes": ["digest","pinDigest"],
+        "extends": ["docker:pinDigests"],
         "minimumReleaseAge": "5 days",
         "automerge": true
       }
     ]
   },
-
+  
   "addon": {
     "description": "Ember addon configuration rules",
     "extends": [
