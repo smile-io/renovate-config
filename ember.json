@@ -175,7 +175,7 @@
 
   "testing-packages": {
     "description": "Testing packages",
-    "extends": ["packages:jsTest"],
+    "extends": ["packages:jsUnitTest"],
     "matchDepNames": ["@ember/test-helpers", "ember-try"]
   },
 
