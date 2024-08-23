@@ -21,8 +21,9 @@
     ],
     "packageRules": [
       {
-        "matchUpdateTypes": ["major", "minor"],
-        "minimumReleaseAge": 5
+        "matchDatasources": ["npm"],
+        "minimumReleaseAge": "5 days",
+        "internalChecksFilter": "strict"
       },
       {
         "matchDepNames": ["eslint"],
@@ -33,32 +34,27 @@
         "extends": ["packages:linters"],
         "matchCurrentVersion": ">= 1.0.0",
         "matchUpdateTypes": ["digest", "minor", "patch"],
-        "minimumReleaseAge": "5 days",
         "automerge": true
       },
       { "extends": ["helpers:pinGitHubActionDigests"], "automerge": true },
       {
         "extends": ["monorepo:babel"],
-        "matchUpdateTypes": ["patch", "minor"],
-        "minimumReleaseAge": "5 days",
+        "matchUpdateTypes": ["patch", "minor"],      
         "automerge": true
       },
       {
         "extends": ["monorepo:datadog-browser-sdk"],
-        "matchUpdateTypes": ["patch", "minor"],
-        "minimumReleaseAge": "5 days",
+        "matchUpdateTypes": ["patch", "minor"],      
         "automerge": true
       },
       {
         "extends": ["github>smile-io/renovate-config:ember/testing-packages"],
-        "matchUpdateTypes": ["patch", "minor"],
-        "minimumReleaseAge": "5 days",
+        "matchUpdateTypes": ["patch", "minor"],      
         "automerge": true
       },
       {
         "extends": ["github>smile-io/renovate-config:ember/styling-packages"],
-        "matchUpdateTypes": ["patch", "minor"],
-        "minimumReleaseAge": "5 days",
+        "matchUpdateTypes": ["patch", "minor"],      
         "automerge": true
       },
       {
@@ -68,14 +64,12 @@
           "ace-builds",
           "npm-run-all2"
         ],
-        "matchUpdateTypes": ["patch", "minor"],
-        "minimumReleaseAge": "5 days",
+        "matchUpdateTypes": ["patch", "minor"],      
         "automerge": true
       },
       {
         "matchUpdateTypes": ["patch", "minor"],
-        "matchDepTypes": ["engines", "volta","packageManager"],
-        "minimumReleaseAge": "5 days",
+        "matchDepTypes": ["engines", "volta","packageManager"],      
         "automerge": true
       },
       {
@@ -83,13 +77,11 @@
         "matchDepTypes": ["devDependencies", "dependencies"],
         "excludeDepNames": ["pnpm"],
         "groupName": "weekly patch updates",
-        "schedule": ["every weekend"],
-        "minimumReleaseAge": "5 days",
+        "schedule": ["every weekend"],      
         "automerge": true
       },
       {
-        "extends": ["docker:pinDigests"],
-        "minimumReleaseAge": "5 days",
+        "extends": ["docker:pinDigests"],      
         "automerge": true
       }
     ]
