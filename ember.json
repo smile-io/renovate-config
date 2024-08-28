@@ -69,7 +69,6 @@
       },
       {
         "matchUpdateTypes": ["patch", "minor"],
-        "matchDatasources": ["npm", "docker"],
         "matchDepTypes": ["engines", "volta", "packageManager", "final"],
         "automerge": true
       },
