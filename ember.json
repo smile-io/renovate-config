@@ -39,22 +39,22 @@
       { "extends": ["helpers:pinGitHubActionDigests"], "automerge": true },
       {
         "extends": ["monorepo:babel"],
-        "matchUpdateTypes": ["patch", "minor"],      
+        "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
       },
       {
         "extends": ["monorepo:datadog-browser-sdk"],
-        "matchUpdateTypes": ["patch", "minor"],      
+        "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
       },
       {
         "extends": ["github>smile-io/renovate-config:ember/testing-packages"],
-        "matchUpdateTypes": ["patch", "minor"],      
+        "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
       },
       {
         "extends": ["github>smile-io/renovate-config:ember/styling-packages"],
-        "matchUpdateTypes": ["patch", "minor"],      
+        "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
       },
       {
@@ -64,12 +64,13 @@
           "ace-builds",
           "npm-run-all2"
         ],
-        "matchUpdateTypes": ["patch", "minor"],      
+        "matchUpdateTypes": ["patch", "minor"],
         "automerge": true
       },
       {
         "matchUpdateTypes": ["patch", "minor"],
-        "matchDepTypes": ["engines", "volta","packageManager"],      
+        "matchDatasources": ["npm", "docker"],
+        "matchDepTypes": ["engines", "volta", "packageManager", "final"],
         "automerge": true
       },
       {
@@ -77,16 +78,16 @@
         "matchDepTypes": ["devDependencies", "dependencies"],
         "excludeDepNames": ["pnpm"],
         "groupName": "weekly patch updates",
-        "schedule": ["every weekend"],      
+        "schedule": ["every weekend"],
         "automerge": true
       },
       {
-        "extends": ["docker:pinDigests"],      
+        "extends": ["docker:pinDigests"],
         "automerge": true
       }
     ]
   },
-  
+
   "addon": {
     "description": "Ember addon configuration rules",
     "extends": [
