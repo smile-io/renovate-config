@@ -73,6 +73,10 @@
         "automerge": true
       },
       {
+        "matchDepTypes": ["pnpm.overrides"],
+        "enabled": false
+      },
+      {
         "matchUpdateTypes": ["patch"],
         "matchDepTypes": ["devDependencies", "dependencies"],
         "excludeDepNames": ["pnpm"],
