@@ -39,22 +39,22 @@
       { "extends": ["helpers:pinGitHubActionDigests"], "automerge": true },
       {
         "extends": ["monorepo:babel"],
-        "matchUpdateTypes": ["patch", "minor"],
+        "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
       },
       {
         "extends": ["monorepo:datadog-browser-sdk"],
-        "matchUpdateTypes": ["patch", "minor"],
+        "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
       },
       {
         "extends": ["github>smile-io/renovate-config:ember/testing-packages"],
-        "matchUpdateTypes": ["patch", "minor"],
+        "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
       },
       {
         "extends": ["github>smile-io/renovate-config:ember/styling-packages"],
-        "matchUpdateTypes": ["patch", "minor"],
+        "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
       },
       {
@@ -64,13 +64,18 @@
           "ace-builds",
           "npm-run-all2"
         ],
-        "matchUpdateTypes": ["patch", "minor"],
+        "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
       },
       {
-        "matchUpdateTypes": ["patch", "minor"],
         "matchDepTypes": ["engines", "volta", "packageManager", "final"],
+        "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
+      },
+      {
+        "matchDepTypes": ["pnpm.overrides"],
+        "matchUpdateTypes": ["major", "minor"],
+        "enabled": false
       },
       {
         "matchUpdateTypes": ["patch"],
