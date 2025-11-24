@@ -1,6 +1,8 @@
 {
   "common": {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "description": "Common Ember configuration rules",
+    "enabled": false,
     "extends": [
       ":disableRateLimiting",
       ":prNotPending",
