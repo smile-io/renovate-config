@@ -63,7 +63,8 @@
           "@datadog/datadog-ci",
           "@release-it-plugins/lerna-changelog",
           "ace-builds",
-          "npm-run-all2"
+          "npm-run-all2",
+          "posthog-js"
         ],
         "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
