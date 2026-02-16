@@ -61,8 +61,8 @@
       {
         "matchDepNames": [
           "@datadog/datadog-ci",
-          "@release-it-plugins/lerna-changelog",
           "ace-builds",
+          "globals",
           "npm-run-all2"
         ],
         "matchUpdateTypes": ["minor", "patch"],
