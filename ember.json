@@ -61,10 +61,12 @@
       {
         "matchDepNames": [
           "@datadog/datadog-ci",
+          "@ember-intl/lint",
           "ace-builds",
           "globals",
           "npm-run-all2",
-          "posthog-js"
+          "posthog-js",
+          "webpack"
         ],
         "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
