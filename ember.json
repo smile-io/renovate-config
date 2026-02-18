@@ -63,7 +63,8 @@
           "@datadog/datadog-ci",
           "ace-builds",
           "globals",
-          "npm-run-all2"
+          "npm-run-all2",
+          "posthog-js"
         ],
         "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
