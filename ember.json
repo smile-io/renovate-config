@@ -64,6 +64,7 @@
           "@ember-intl/lint",
           "ace-builds",
           "globals",
+          "lint-staged",
           "npm-run-all2",
           "posthog-js",
           "webpack"
