@@ -67,6 +67,7 @@
         "matchDepNames": [
           "@datadog/datadog-ci",
           "@ember-intl/lint",
+          "@faker-js/faker",
           "@typescript-eslint/eslint-plugin",
           "@typescript-eslint/parser",
           "ace-builds",
