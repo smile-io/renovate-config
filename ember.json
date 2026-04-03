@@ -39,7 +39,6 @@
       },
       {
         "extends": ["helpers:pinGitHubActionDigests"],
-        "automerge": true,
         "minimumReleaseAge": "5 days",
         "internalChecksFilter": "strict"
       },
@@ -99,8 +98,7 @@
         "automerge": true
       },
       {
-        "extends": ["docker:pinDigests"],
-        "automerge": true
+        "extends": ["docker:pinDigests"]
       }
     ]
   },
