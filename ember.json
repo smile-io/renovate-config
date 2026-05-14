@@ -90,6 +90,11 @@
         "enabled": false
       },
       {
+        "matchManagers": ["pnpm-workspace"],
+        "matchUpdateTypes": ["major", "minor"],
+        "enabled": false
+      },
+      {
         "matchUpdateTypes": ["patch"],
         "matchDepTypes": ["devDependencies", "dependencies"],
         "excludeDepNames": ["pnpm"],
