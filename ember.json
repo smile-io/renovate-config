@@ -53,6 +53,11 @@
         "automerge": true
       },
       {
+        "extends": ["packages:jsUnitTest"],
+        "matchUpdateTypes": ["minor", "patch"],
+        "automerge": true
+      },
+      {
         "extends": ["github>smile-io/renovate-config:ember/testing-packages"],
         "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
@@ -186,14 +191,18 @@
   },
 
   "testing-packages": {
-    "description": "Testing packages",
-    "extends": ["packages:jsUnitTest"],
-    "matchDepNames": ["@ember/test-helpers", "ember-try"]
+    "description": "Testing packages not covered by packages:jsUnitTest",
+    "matchPackageNames": ["@ember/test-helpers", "ember-try"]
   },
 
   "testing": {
     "description": "Group all testing dependencies",
     "packageRules": [
+      {
+        "groupName": "testing dependencies",
+        "groupSlug": "testing",
+        "extends": ["packages:jsUnitTest"]
+      },
       {
         "groupName": "testing dependencies",
         "groupSlug": "testing",
