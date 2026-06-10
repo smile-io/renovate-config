@@ -23,6 +23,9 @@
     "lockFileMaintenance": {
       "automerge": true
     },
+    "vulnerabilityAlerts": {
+      "automerge": true
+    },
     "packageRules": [
       {
         "matchDatasources": ["npm"],
