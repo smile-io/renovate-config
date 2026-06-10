@@ -38,7 +38,11 @@
         "automerge": true
       },
       {
-        "extends": ["helpers:pinGitHubActionDigests"],
+        "extends": ["helpers:pinGitHubActionDigests"]
+      },
+      {
+        "matchDepTypes": ["action"],
+        "matchUpdateTypes": ["major", "minor", "patch"],
         "minimumReleaseAge": "5 days",
         "internalChecksFilter": "strict"
       },
