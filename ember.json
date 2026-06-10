@@ -20,6 +20,9 @@
       "github>smile-io/renovate-config:ember/styling",
       "github>smile-io/renovate-config:ember/testing"
     ],
+    "lockFileMaintenance": {
+      "automerge": true
+    },
     "packageRules": [
       {
         "matchDatasources": ["npm"],
