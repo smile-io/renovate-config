@@ -47,6 +47,11 @@
         "internalChecksFilter": "strict"
       },
       {
+        "matchManagers": ["github-actions"],
+        "matchUpdateTypes": ["minor", "patch"],
+        "automerge": true
+      },
+      {
         "extends": ["monorepo:babel"],
         "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
