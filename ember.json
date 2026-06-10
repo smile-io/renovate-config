@@ -84,6 +84,7 @@
           "@typescript-eslint/eslint-plugin",
           "@typescript-eslint/parser",
           "ace-builds",
+          "ember-eslint-parser",
           "globals",
           "lint-staged",
           "npm-run-all2",
