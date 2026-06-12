@@ -61,6 +61,22 @@
         "automerge": true
       },
       {
+        "description": "Auto-merge digest updates to our own GitHub Actions (review happens at the source repo; age gating can't evaluate digests anyway)",
+        "matchManagers": ["github-actions"],
+        "matchDepNames": ["smile-io/**"],
+        "matchUpdateTypes": ["digest"],
+        "automerge": true
+      },
+      {
+        "description": "Auto-merge minor/patch updates to our own GitHub Actions immediately, skipping the third-party supply-chain age gate",
+        "matchManagers": ["github-actions"],
+        "matchDepNames": ["smile-io/**"],
+        "matchUpdateTypes": ["minor", "patch"],
+        "minimumReleaseAge": "0",
+        "internalChecksFilter": "none",
+        "automerge": true
+      },
+      {
         "extends": ["monorepo:babel"],
         "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
