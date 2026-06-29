@@ -9,7 +9,6 @@
       ":enableVulnerabilityAlertsWithLabel(security,internal,dependencies,'Category: KTLO')",
       ":separateMultipleMajorReleases",
       ":timezone(America/Toronto)",
-      "schedule:automergeOfficeHours",
       "group:embroiderMonorepo",
       "group:glimmer",
       "group:linters",
@@ -25,7 +24,6 @@
     "lockFileMaintenance": {
       "automerge": true
     },
-    "platformAutomerge": false,
     "vulnerabilityAlerts": {
       "automerge": true
     },
