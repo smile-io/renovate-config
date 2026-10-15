@@ -123,12 +123,7 @@
         "automerge": true
       },
       {
-        "matchDepTypes": ["pnpm.overrides"],
-        "matchUpdateTypes": ["major", "minor"],
-        "enabled": false
-      },
-      {
-        "matchManagers": ["pnpm-workspace"],
+        "matchDepTypes": ["pnpm.overrides", "pnpm-workspace.overrides"],
         "matchUpdateTypes": ["major", "minor"],
         "enabled": false
       },
