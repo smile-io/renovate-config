@@ -123,12 +123,9 @@
         "automerge": true
       },
       {
-        "matchDepTypes": ["pnpm.overrides"],
-        "matchUpdateTypes": ["major", "minor"],
-        "enabled": false
-      },
-      {
-        "matchManagers": ["pnpm-workspace"],
+        "description": "Selector overrides (`pkg@<range>`, `parent>pkg`) pin a transitive dependency to the major its consumers declare. Plain-name overrides are left out because they often mirror a direct dependency and have to move with it. To keep an override-only pin under this rule, give it a selector, e.g. `@types/eslint@<8`.",
+        "matchDepTypes": ["pnpm.overrides", "pnpm-workspace.overrides"],
+        "matchDepNames": ["/^.+[@>]/"],
         "matchUpdateTypes": ["major", "minor"],
         "enabled": false
       },
